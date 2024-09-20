@@ -1,0 +1,2 @@
+1. i have a array literal of 3 elements [x, y, z] i want to assign them to a variable like this const [x, y, z] = [x, y, z] i think this method is called deassigning or i may be wrong correct. I just want the three values of array inside each respective variable
+TODO: 
