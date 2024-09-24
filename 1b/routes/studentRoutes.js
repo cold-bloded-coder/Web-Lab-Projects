@@ -8,7 +8,7 @@ router.get("/get", async (req, res) => {
     try {
         const students = await Student.find()
         if (!students.length) {
-            return res.status(404).send("No students found");
+            return res.status(404).send("No students Found");
         }
         res.json(students);
     } catch (err) {
