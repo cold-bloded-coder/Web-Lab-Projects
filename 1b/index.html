@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database retrieval</title>
 </head>
+
 <body>
     <button id="fetchData">Fetch Data</button>
-    <script src="./script.js"></script>
+    <script>
+        window.onload = document.getElementById("fetchData")
+            .addEventListener("click", async () => {
+                try {
+                    console.log("hello")
+                    const response = await fetch('/students/get')
+                    if (response.ok) {
+                        const students = await response.json()
+                        students.forEach(student => {
+                            console.log("hello")
+                            console.log(`USN: ${student.usn}, Name: ${student.name}, Subject Code: ${student.subject_code}, CIE Marks: ${student.cie_marks}`)
+                        })
+                    } else {
+                        console.log("404 not found")
+                    }
+                    // window.location.href = '/';
+                } catch (err) {
+                    console.log("not able to fetch")
+                }
+            })
+    </script>
 </body>
+
 </html>
