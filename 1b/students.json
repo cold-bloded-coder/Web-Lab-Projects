@@ -1,0 +1,7 @@
+[
+    { "usn": "1", "name": "Alice", "subject_code": "CS101", "cie_marks": 85 },
+    { "usn": "2", "name": "Bob", "subject_code": "CS102", "cie_marks": 78 },
+    { "usn": "3", "name": "Charlie", "subject_code": "CS103", "cie_marks": 90 },
+    { "usn": "4", "name": "David", "subject_code": "CS104", "cie_marks": 88 },
+    { "usn": "5", "name": "Eve", "subject_code": "CS105", "cie_marks": 92 }
+]
